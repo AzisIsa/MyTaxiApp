@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="A6i-34-eAn">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="b58-1b-6jx">
+            <objects>
+                <viewController id="x6w-5B-gaX" customClass="MapViewController" customModule="OpenFreeCabs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="etp-U6-Wp1"/>
+                        <viewControllerLayoutGuide type="bottom" id="fIc-mA-CDz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dri-1g-gVz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R44-9X-b2d" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin" translatesAutoresizingMaskIntoConstraints="NO" id="aZM-NP-gjl">
+                                <rect key="frame" x="188.5" y="358" width="37" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="WIN-RB-Oq9"/>
+                                    <constraint firstAttribute="height" constant="52" id="lk1-Nb-JSa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WIN-RB-Oq9"/>
+                                        <exclude reference="lk1-Nb-JSa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="WIN-RB-Oq9"/>
+                                        <include reference="lk1-Nb-JSa"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R44-9X-b2d" secondAttribute="bottom" id="6G3-qs-vel"/>
+                            <constraint firstItem="R44-9X-b2d" firstAttribute="width" secondItem="Dri-1g-gVz" secondAttribute="width" id="ENA-WM-GP5"/>
+                            <constraint firstItem="aZM-NP-gjl" firstAttribute="centerY" secondItem="R44-9X-b2d" secondAttribute="centerY" id="ORh-on-4Ra">
+                                <variation key="widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="R44-9X-b2d" firstAttribute="top" secondItem="etp-U6-Wp1" secondAttribute="bottom" id="WW1-2v-9f8"/>
+                            <constraint firstItem="aZM-NP-gjl" firstAttribute="centerX" secondItem="R44-9X-b2d" secondAttribute="centerX" id="ZyL-Xi-wxC"/>
+                            <constraint firstItem="R44-9X-b2d" firstAttribute="centerX" secondItem="Dri-1g-gVz" secondAttribute="centerX" id="wPs-jc-8DC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="R44-9X-b2d"/>
+                                <exclude reference="aZM-NP-gjl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6G3-qs-vel"/>
+                                <exclude reference="ENA-WM-GP5"/>
+                                <exclude reference="WW1-2v-9f8"/>
+                                <exclude reference="wPs-jc-8DC"/>
+                                <exclude reference="ORh-on-4Ra"/>
+                                <exclude reference="ZyL-Xi-wxC"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="R44-9X-b2d"/>
+                                <include reference="aZM-NP-gjl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="6G3-qs-vel"/>
+                                <include reference="ENA-WM-GP5"/>
+                                <include reference="WW1-2v-9f8"/>
+                                <include reference="wPs-jc-8DC"/>
+                                <include reference="ORh-on-4Ra"/>
+                                <include reference="ZyL-Xi-wxC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="oAi-KI-ium">
+                        <barButtonItem key="leftBarButtonItem" title="Call" id="3G7-fL-T1E" userLabel="Call">
+                            <connections>
+                                <action selector="CallCab:" destination="x6w-5B-gaX" id="bhF-Pv-57K"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="gps" id="bdK-RN-j1f">
+                            <connections>
+                                <action selector="findMeAction:" destination="x6w-5B-gaX" id="eOa-vO-86f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="findMeButton" destination="bdK-RN-j1f" id="1jk-re-edw"/>
+                        <outlet property="mapView" destination="R44-9X-b2d" id="gcb-zh-pkq"/>
+                        <outlet property="myMarkerOnMap" destination="aZM-NP-gjl" id="yTe-LV-ALt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Km0-xY-kan" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1293" y="296"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LKU-4L-TFO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A6i-34-eAn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="JtO-Mr-BRO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.025929346959842784" green="0.086980844626373954" blue="0.3681696806238105" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x6w-5B-gaX" kind="relationship" relationship="rootViewController" id="KJ0-cR-wOr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8Q-su-9rY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="296"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gps" width="22" height="22"/>
+        <image name="pin" width="37" height="52"/>
+    </resources>
+</document>
