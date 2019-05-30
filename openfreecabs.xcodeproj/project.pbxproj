@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0ADD9921229C1AD80052942C /* OpenFreeCabsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD9920229C1AD80052942C /* OpenFreeCabsTests.swift */; };
 		60FD4BA02F6E5A436044EB6C /* Pods_OpenFreeCabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5AF0F8FAE2242DCB4847E1 /* Pods_OpenFreeCabs.framework */; };
 		9003A2E11D719EE100F2146F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9003A2E01D719EE100F2146F /* AppDelegate.swift */; };
 		9003A2E61D719EE100F2146F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9003A2E41D719EE100F2146F /* Main.storyboard */; };
@@ -22,7 +23,20 @@
 		905BAE461D71C5D700B155D2 /* CompaniesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905BAE451D71C5D700B155D2 /* CompaniesModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0ADD9923229C1AD80052942C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9003A2D51D719EE100F2146F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9003A2DC1D719EE100F2146F;
+			remoteInfo = OpenFreeCabs;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0ADD991E229C1AD80052942C /* OpenFreeCabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenFreeCabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADD9920229C1AD80052942C /* OpenFreeCabsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenFreeCabsTests.swift; sourceTree = "<group>"; };
+		0ADD9922229C1AD80052942C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BF67014D4C8EAFC40A58D9F /* Pods-OpenFreeCabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFreeCabs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFreeCabs/Pods-OpenFreeCabs.debug.xcconfig"; sourceTree = "<group>"; };
 		756046A86889A76FC5046D26 /* Pods-OpenFreeCabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFreeCabs.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenFreeCabs/Pods-OpenFreeCabs.release.xcconfig"; sourceTree = "<group>"; };
 		9003A2DD1D719EE100F2146F /* OpenFreeCabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenFreeCabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0ADD991B229C1AD80052942C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9003A2DA1D719EE100F2146F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -54,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ADD991F229C1AD80052942C /* OpenFreeCabsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ADD9920229C1AD80052942C /* OpenFreeCabsTests.swift */,
+				0ADD9922229C1AD80052942C /* Info.plist */,
+			);
+			path = OpenFreeCabsTests;
+			sourceTree = "<group>";
+		};
 		157284D02BCFA6C1BE9D124A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9003A2DF1D719EE100F2146F /* openfreecabs */,
+				0ADD991F229C1AD80052942C /* OpenFreeCabsTests */,
 				9003A2DE1D719EE100F2146F /* Products */,
 				C5B7056C93C71F20A2A29D6F /* Pods */,
 				157284D02BCFA6C1BE9D124A /* Frameworks */,
@@ -76,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				9003A2DD1D719EE100F2146F /* OpenFreeCabs.app */,
+				0ADD991E229C1AD80052942C /* OpenFreeCabsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,6 +176,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0ADD991D229C1AD80052942C /* OpenFreeCabsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ADD9927229C1AD80052942C /* Build configuration list for PBXNativeTarget "OpenFreeCabsTests" */;
+			buildPhases = (
+				0ADD991A229C1AD80052942C /* Sources */,
+				0ADD991B229C1AD80052942C /* Frameworks */,
+				0ADD991C229C1AD80052942C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ADD9924229C1AD80052942C /* PBXTargetDependency */,
+			);
+			name = OpenFreeCabsTests;
+			productName = OpenFreeCabsTests;
+			productReference = 0ADD991E229C1AD80052942C /* OpenFreeCabsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		9003A2DC1D719EE100F2146F /* OpenFreeCabs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9003A2EF1D719EE200F2146F /* Build configuration list for PBXNativeTarget "OpenFreeCabs" */;
@@ -170,10 +220,16 @@
 		9003A2D51D719EE100F2146F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Mad Devs";
 				TargetAttributes = {
+					0ADD991D229C1AD80052942C = {
+						CreatedOnToolsVersion = 10.2.1;
+						DevelopmentTeam = NQK83W3X27;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9003A2DC1D719EE100F2146F;
+					};
 					9003A2DC1D719EE100F2146F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = NQK83W3X27;
@@ -195,11 +251,19 @@
 			projectRoot = "";
 			targets = (
 				9003A2DC1D719EE100F2146F /* OpenFreeCabs */,
+				0ADD991D229C1AD80052942C /* OpenFreeCabsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0ADD991C229C1AD80052942C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9003A2DB1D719EE100F2146F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -272,6 +336,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0ADD991A229C1AD80052942C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ADD9921229C1AD80052942C /* OpenFreeCabsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9003A2D91D719EE100F2146F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +361,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ADD9924229C1AD80052942C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9003A2DC1D719EE100F2146F /* OpenFreeCabs */;
+			targetProxy = 0ADD9923229C1AD80052942C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9003A2E41D719EE100F2146F /* Main.storyboard */ = {
@@ -310,6 +390,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0ADD9925229C1AD80052942C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQK83W3X27;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OpenFreeCabsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisisa.OpenFreeCabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenFreeCabs.app/OpenFreeCabs";
+			};
+			name = Debug;
+		};
+		0ADD9926229C1AD80052942C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NQK83W3X27;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = OpenFreeCabsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.azisisa.OpenFreeCabsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenFreeCabs.app/OpenFreeCabs";
+			};
+			name = Release;
+		};
 		9003A2ED1D719EE200F2146F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -451,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0ADD9927229C1AD80052942C /* Build configuration list for PBXNativeTarget "OpenFreeCabsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ADD9925229C1AD80052942C /* Debug */,
+				0ADD9926229C1AD80052942C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9003A2D81D719EE100F2146F /* Build configuration list for PBXProject "openfreecabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
